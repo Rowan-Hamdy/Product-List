@@ -101,7 +101,7 @@ class AddComp extends Component {
         className='btn btn-primary'
         value="Add"  
          onClick={()=>{
-             this.props.AnthRef({
+             this.props.AddRef({
                 id:this.state._id,
                 name:this.state._name,
                 price:this.state._price,

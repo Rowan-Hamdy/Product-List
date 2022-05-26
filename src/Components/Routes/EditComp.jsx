@@ -74,6 +74,8 @@ class EditComp extends Component {
                 id: this.state._Id,
                 name: this.state._Name,
                 price: this.state._Price,
+                quantity: this.state._Quantity,
+                prodImg: this.props.location.SelectedObject.prodImg,
                 desc: this.state._Description,
               },
               this.props.location.index

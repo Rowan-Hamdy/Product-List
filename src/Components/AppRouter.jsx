@@ -86,6 +86,7 @@ class AppRouter extends Component {
           <Route
             component={(props) => (
               <ListComp
+                RemoveHandler={this.RemoveHandler} 
                 ProductArrayRef={this.state.products}
                 {...props}
                 BOMProps={props}

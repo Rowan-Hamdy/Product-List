@@ -39,7 +39,7 @@ class ListComp extends Component{
                 type={"button"} 
                 value="Delete"
                 className="btn btn-outline-danger"
-                onClick={()=>this.props.RemoveHandlerRef(i)} />
+                onClick={()=>this.props.RemoveHandler(i)} />
         
                   <Link to={{ pathname:`/Details/${item.id}`, SelectedObject:item }} className='btn btn-outline-success'>
                   Details
@@ -55,8 +55,21 @@ class ListComp extends Component{
     return this.state.products;
 } 
     render(){
+        
         return (
+            
             <div className='container'>
+                      
+        <div style={{color:"#B94A3E", width:"20%"}}>
+
+        <span>Choose Catgorey</span>
+        <select class="form-select form-select-sm" aria-label=".form-select-sm example" onChange={this.onChangeHandler}>
+                <option value="">All</option>
+                <option value="Bread">Bread</option>
+                <option value="Cookies">Cookies</option>
+                <option value="Chocolate">Chocolate</option>
+            </select>
+        </div>
             <table className="table">
       <thead>
         <tr>
